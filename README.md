@@ -7,4 +7,4 @@ Trabalho desenvolvido em grupo na matéria de PI(Projeto Integrador)<br><br>
 ⋅ Consultar receitas de outros usuários<br>
 ⋅ Avaliar receitas de outros usuários<br>
 ⋅ Barra de Pesquisa
-
+⋅ Fotos e videos das receitas
