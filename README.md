@@ -1,5 +1,5 @@
-# SENAC MASTER COOK
-Trabalho desenvolvido em grupo na matéria de PI(Projeto Integrador)<br><br>
+# <h1>SENAC MASTER COOK</h1>
+<h2>Trabalho desenvolvido em grupo na matéria de PI(Projeto Integrador)</h2><br><br>
 
 <strong>Funcionalidades</strong><br>
 
