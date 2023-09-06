@@ -15,5 +15,14 @@
 <strong> Prototipação realizada no FIGMA </strong><br><br>
 
 <strong> TELA INICIAL </strong><br>
-<img src="/public/Imagens do protótipo/TelaInicial.png">
+<img src="/public/Imagens do protótipo/TelaInicial.png"><br>
+
+<strong> TELA RECEITAS </strong><br>
+<img src="/public/Imagens do protótipo/TelaReceitas.png"><br>
+
+<strong> TELA LOGIN </strong><br>
+<img src="/public/Imagens do protótipo/TelaLogin.png"><br>
+
+<strong> TELA RECEITAS </strong><br>
+<img src="/public/Imagens do protótipo/TelaCadastro.png"><br>
 
