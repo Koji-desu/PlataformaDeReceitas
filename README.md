@@ -12,5 +12,8 @@ Trabalho desenvolvido em grupo na matéria de PI(Projeto Integrador)<br><br>
 ⋅ Tela de cadastro<br>
 
 
-<strong> Prototipação FIGMA </strong><br>
-https://www.figma.com/file/YmjDJfdcNZ9UvaFrlQG8bm/Untitled?type=design&node-id=0%3A1&mode=design&t=T9q1mX8bIhXcqBaY-1
+<strong> Prototipação realizada no FIGMA </strong><br><br>
+
+<strong> TELA INICIAL </strong><br>
+<img src="../../TelaInicial.png">
+
