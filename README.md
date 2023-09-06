@@ -24,5 +24,12 @@
 <img src="/public/Imagens do protótipo/TelaLogin.png"><br><br>
 
 <strong> TELA RECEITAS </strong><br>
-<img src="/public/Imagens do protótipo/TelaCadastro.png"><br>
+<img src="/public/Imagens do protótipo/TelaCadastro.png"><br><br><br>
 
+<strong> DIAGRAMAS MER realizados no brmodelo</strong><br>
+
+<strong> Diagrama conceitual </strong>
+<img src="/public/Imagens do protótipo/DiagramaConceitual.png"><br><br>
+
+<strong> Diagrama Lógico </strong>
+<img src="/public/Imagens do protótipo/DiagramaLogico.png"><br><br>
