@@ -15,5 +15,5 @@ Trabalho desenvolvido em grupo na matéria de PI(Projeto Integrador)<br><br>
 <strong> Prototipação realizada no FIGMA </strong><br><br>
 
 <strong> TELA INICIAL </strong><br>
-<img src="./public/Imagens do protótipo/TelaInicial.png">
+<img src="../public/Imagens do protótipo/TelaInicial.png">
 
