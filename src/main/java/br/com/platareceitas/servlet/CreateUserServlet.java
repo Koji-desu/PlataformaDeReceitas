@@ -13,14 +13,10 @@ public class CreateUserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String userName = request.getParameter("user-name");
-        String userEmail = request.getParameter("user-email");
-        String userPassword = request.getParameter("user-password");
-        String userPasswordConfirmed = request.getParameter("user-passwordConfirmed");
-
+        String userName = request.getParameter("nome");
         System.out.println(userName);
 
-        request.getRequestDispatcher("index.html").forward(request, response);
+        request.getRequestDispatcher("cadastro.html").forward(request, response);
 
     }
 

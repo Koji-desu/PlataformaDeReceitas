@@ -4,4 +4,22 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>CreateReceitaServlet</servlet-name>
+    <servlet-class>br.com.platareceitas.servlet.CreateReceitaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateReceitaServlet</servlet-name>
+    <url-pattern>/create-receita</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CreateUserServlet</servlet-name>
+    <servlet-class>br.com.platareceitas.servlet.CreateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateUserServlet</servlet-name>
+    <url-pattern>/create-user</url-pattern>
+  </servlet-mapping>
+
 </web-app>
