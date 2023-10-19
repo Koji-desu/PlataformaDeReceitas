@@ -8,3 +8,10 @@ body {
     padding: 20px;
     margin-top: 100px;
 }
+
+.spanForm{
+    font-size: 12px;
+    margin: 3px 0 0 01px;
+    color: red;
+    display: none;
+}

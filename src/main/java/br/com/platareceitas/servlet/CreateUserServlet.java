@@ -21,10 +21,9 @@ public class CreateUserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("senha");
         String confPassword = request.getParameter("confSenha");
-
-            User usuario = new User(userName, email, password);
-            UserDAO userDAO = new UserDAO();
-            userDAO.createUser(usuario);
+        User usuario = new User(userName, email, password);
+        UserDAO userDAO = new UserDAO();
+        userDAO.createUser(usuario);
 
         request.getRequestDispatcher("cadastro.html").forward(request, response);
 
