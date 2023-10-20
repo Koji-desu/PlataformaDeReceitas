@@ -4,6 +4,10 @@ public class Receita {
 
     private String name;
 
+    public Receita(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
