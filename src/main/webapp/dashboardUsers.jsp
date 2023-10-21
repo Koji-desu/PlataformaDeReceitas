@@ -12,18 +12,22 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
             <th>Actions</th>
         </tr>
-        <c:forEach var="receita" items="${receitas}">
+        <c:forEach var="user" items="${users}">
             <tr>
-                <td>${receita.id}</td>
-                <td>${receita.name}</td>
+                <td>${user.id}</td>
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+                <td>${user.password}</td>
                 <td>
                     <form action='/delete-receita' method="post">
-                        <input type="hidden" id="id" name="id" value="${receita.id}">
+                        <input type="hidden" id="id" name="id" value="${user.id}">
                         <button type="submit">Delete</button>
                         <span> | </span>
-                        <a href="index.jsp?id=${receita.id}&name=${receita.name}">Update</a>
+                        <a href="editCadastro.jsp?id=${user.id}&name=${user.name}">Update</a>
                     </form>
             </tr>
         </c:forEach>

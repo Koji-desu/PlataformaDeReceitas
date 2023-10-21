@@ -2,6 +2,17 @@ package br.com.platareceitas.MODEL;
 
 public class Receita {
 
+    private String id;
+
+    public String getId() {
+        return id;
+    }
+
+    public Receita(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     private String name;
 
     public Receita(String name) {

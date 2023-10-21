@@ -53,9 +53,10 @@ public class ReceitaDAO {
 
             while (resultSet.next()) {
 
+                String receitaId = resultSet.getString(("id"));
                 String receitaName = resultSet.getString("name");
 
-                Receita receita = new Receita(receitaName);
+                Receita receita = new Receita(receitaId,receitaName);
 
                 receitas.add(receita);
 
@@ -72,6 +73,60 @@ public class ReceitaDAO {
             System.out.println("fail in database connection");
 
             return Collections.emptyList();
+
+        }
+    }
+    public void deleteReceitaById(String id){
+
+        String SQL = "DELETE RECEITA WHERE ID = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, id);
+
+
+            preparedStatement.execute();
+
+            System.out.println("success on delete receita with id: "+id);
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+        }
+    }
+
+    public void updateReceita(Receita receita){
+        String SQL = "UPDATE RECEITA SET NAME = ? WHERE ID = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, receita.getName());
+            preparedStatement.setString(2, receita.getId());
+            preparedStatement.execute();
+
+            System.out.println("success in update receita");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
 
         }
     }

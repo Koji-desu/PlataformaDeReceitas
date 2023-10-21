@@ -17,10 +17,19 @@ public class CreateReceitaServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        String receitaId = request.getParameter("id");
         String receitaName = request.getParameter("receita-name");
-        Receita receita = new Receita(receitaName);
+
         ReceitaDAO receitaDAO = new ReceitaDAO();
-        receitaDAO.createReceita(receita);
+        Receita receita = new Receita(receitaId,receitaName);
+
+        if(receitaId.isBlank()){
+            receitaDAO.createReceita(receita);
+        } else {
+            receitaDAO.updateReceita(receita);
+        }
+
+
 
 
        /* String receitaDescricao = request.getParameter("receita-descricao");
