@@ -78,7 +78,7 @@ public class UserDAO {
 
         }
     }
-    public void deleteReceitaById(String id){
+    public void deleteUserById(String id){
 
         String SQL = "DELETE USUARIO WHERE ID = ?";
 
@@ -106,7 +106,7 @@ public class UserDAO {
         }
     }
 
-    public void updateReceita(User receita){
+    public void updateUser(User user){
         String SQL = "UPDATE USUARIO SET NAME = ? WHERE ID = ?";
 
         try {
@@ -117,8 +117,8 @@ public class UserDAO {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, receita.getName());
-            preparedStatement.setString(2, receita.getId());
+            preparedStatement.setString(1, user.getName());
+            preparedStatement.setString(2, user.getId());
             preparedStatement.execute();
 
             System.out.println("success in update user");

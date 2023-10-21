@@ -1,7 +1,7 @@
 package br.com.platareceitas.servlet;
 
 import br.com.platareceitas.MODEL.User;
-import br.com.platareceitas.DAO.UserDAO
+import br.com.platareceitas.DAO.UserDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,7 +21,7 @@ public class FindAllUserServlet extends HttpServlet {
 
         req.setAttribute("users", users);
 
-        req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
+        req.getRequestDispatcher("dashboardUsers.jsp").forward(req, resp);
     }
 
 }

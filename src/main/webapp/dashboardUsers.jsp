@@ -23,11 +23,11 @@
                 <td>${user.email}</td>
                 <td>${user.password}</td>
                 <td>
-                    <form action='/delete-receita' method="post">
+                    <form action='/delete-usuarios' method="post">
                         <input type="hidden" id="id" name="id" value="${user.id}">
                         <button type="submit">Delete</button>
                         <span> | </span>
-                        <a href="editCadastro.jsp?id=${user.id}&name=${user.name}">Update</a>
+                        <a href="editCadastro.jsp?id=${user.id}&name=${user.name}&email=${user.email}&password=${user.password}">Update</a>
                     </form>
             </tr>
         </c:forEach>

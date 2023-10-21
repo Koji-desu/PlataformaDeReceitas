@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/delete-usuario")
+@WebServlet("/delete-usuarios")
 public class DeleteUserServlet extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-        String receitaId = req.getParameter("id");
+        String userId = req.getParameter("id");
 
-        new UserDAO().deleteReceitaById(receitaId);
+        new UserDAO().deleteUserById(userId);
 
-        resp.sendRedirect("/find-all-usuario");
+        resp.sendRedirect("/find-all-usuarios");
 
     }
 }
