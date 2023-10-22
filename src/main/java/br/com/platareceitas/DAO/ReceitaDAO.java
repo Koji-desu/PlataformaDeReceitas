@@ -147,17 +147,14 @@ public class ReceitaDAO {
     }
 
     public List<Receita> findReceita(String busca) {
-        String SQL = "select * from receita where name like '?%'";
+        String SQL = "select * from receita where name like ? ";
         try {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
             System.out.println("success in database connection");
-
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1, busca);
+            preparedStatement.setString(1,"%"+busca+"%");
             ResultSet resultSet = preparedStatement.executeQuery();
-
             List<Receita> receitas = new ArrayList<>();
 
             while (resultSet.next()) {
