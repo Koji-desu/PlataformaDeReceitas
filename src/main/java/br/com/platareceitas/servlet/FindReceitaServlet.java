@@ -11,13 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/find-all-receitas")
-public class FindAllReceitaServlet extends HttpServlet {
+@WebServlet("/find-receitas")
+public class FindReceitaServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<Receita> receitas = new ReceitaDAO().findAllReceitas();
+        String busca = req.getParameter("busca");
+        List<Receita> receitas = new ReceitaDAO().findReceita(busca);
 
         req.setAttribute("receitas", receitas);
 

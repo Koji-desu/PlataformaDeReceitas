@@ -10,18 +10,24 @@ import java.util.List;
 
 public class ReceitaDAO {
 
-    public void createReceita(Receita receita){
-        String SQL = "INSERT INTO RECEITA (NAME) VALUES (?)";
+    public void createReceita(Receita receita) {
+        String SQL = "INSERT INTO RECEITA (NAME, DESCRIPTION, INSTRUCTIONS, TIME, CATEGORY, DIFFICULTY, IMAGE) VALUES (?,?,?,?,?,?,?)";
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             preparedStatement.setString(1, receita.getName());
+            preparedStatement.setString(2, receita.getDescription());
+            preparedStatement.setString(3, receita.getInstructions());
+            preparedStatement.setInt(4, receita.getTime());
+            preparedStatement.setString(5, receita.getCategory());
+            preparedStatement.setString(6, receita.getDifficulty());
+            preparedStatement.setString(7, receita.getImage());
 
 
             preparedStatement.execute();
@@ -37,7 +43,8 @@ public class ReceitaDAO {
         }
 
     }
-    public List<Receita> findAllReceitas(){
+
+    public List<Receita> findAllReceitas() {
         String SQL = "SELECT * FROM RECEITA";
         try {
 
@@ -53,10 +60,17 @@ public class ReceitaDAO {
 
             while (resultSet.next()) {
 
-                String receitaId = resultSet.getString(("id"));
+                String receitaId = resultSet.getString("id");
                 String receitaName = resultSet.getString("name");
+                String receitaDescription = resultSet.getString("description");
+                String receitaInstructions = resultSet.getString("instructions");
+                int receitaTime = resultSet.getInt("time");
+                String receitaCategory = resultSet.getString("category");
+                String receitaDifficulty = resultSet.getString("difficulty");
+                String receitaImage = resultSet.getString("image");
 
-                Receita receita = new Receita(receitaId,receitaName);
+
+                Receita receita = new Receita(receitaId, receitaName, receitaDescription, receitaInstructions, receitaTime, receitaCategory, receitaDifficulty, receitaImage);
 
                 receitas.add(receita);
 
@@ -76,13 +90,14 @@ public class ReceitaDAO {
 
         }
     }
-    public void deleteReceitaById(String id){
+
+    public void deleteReceitaById(String id) {
 
         String SQL = "DELETE RECEITA WHERE ID = ?";
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             System.out.println("success in database connection");
 
@@ -93,7 +108,7 @@ public class ReceitaDAO {
 
             preparedStatement.execute();
 
-            System.out.println("success on delete receita with id: "+id);
+            System.out.println("success on delete receita with id: " + id);
 
             connection.close();
 
@@ -104,12 +119,12 @@ public class ReceitaDAO {
         }
     }
 
-    public void updateReceita(Receita receita){
+    public void updateReceita(Receita receita) {
         String SQL = "UPDATE RECEITA SET NAME = ? WHERE ID = ?";
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             System.out.println("success in database connection");
 
@@ -127,6 +142,53 @@ public class ReceitaDAO {
 
             System.out.println("fail in database connection");
             System.out.println("Error: " + e.getMessage());
+
+        }
+    }
+
+    public List<Receita> findReceita(String busca) {
+        String SQL = "select * from receita where name like '?%'";
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, busca);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Receita> receitas = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String receitaId = resultSet.getString("id");
+                String receitaName = resultSet.getString("name");
+                String receitaDescription = resultSet.getString("description");
+                String receitaInstructions = resultSet.getString("instructions");
+                int receitaTime = resultSet.getInt("time");
+                String receitaCategory = resultSet.getString("category");
+                String receitaDifficulty = resultSet.getString("difficulty");
+                String receitaImage = resultSet.getString("image");
+
+
+                Receita receita = new Receita(receitaId, receitaName, receitaDescription, receitaInstructions, receitaTime, receitaCategory, receitaDifficulty, receitaImage);
+
+                receitas.add(receita);
+
+            }
+
+            System.out.println("success in select * where receita");
+
+            connection.close();
+
+            return receitas;
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
 
         }
     }

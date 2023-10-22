@@ -1,0 +1,14 @@
+/* Classe padrão do botão sem imagem de fundo */
+.my-button {
+    background-image: url("../img/heart.png.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30px;
+}
+
+/* Classe do botão com a imagem de fundo */
+.with-background {
+    background-image: url('../img/heart-fill.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
