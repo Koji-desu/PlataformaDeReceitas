@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    <%@page contentType="text/html" pageEncoding="UTF-8"%>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,32 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+    <script src="js/cadastro.js"></script>
 
 
 </head>
 
 <body>
 
-<header>
-    <div class="header-content">
-        <div class="logo">
-            <img src="logo.png" alt="Logo da SENAC MASTER COOK">
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar...">
-            <button>Buscar</button>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">Receitas</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="cadastro.html">Cadastrar </a> </li>
-        </ul>
-    </nav>
-</header>
+    <jsp:include page="Header.jsp" />
 
 <main>
     <div class="container">
@@ -76,12 +60,9 @@
             </div>
         </div>
     </div>
-    <div class="container col-md-6">]</div>
+    
 
 </main>
-
+<jsp:include page="Footer.jsp" />
 </body>
-<script src="./js/cadastro.js">
-</script>
-
 </html>

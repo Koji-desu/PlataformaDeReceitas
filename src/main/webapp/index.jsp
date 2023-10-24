@@ -2,6 +2,8 @@
 <html lang="pt-br">
 
 <head>
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+  <%@page contentType="text/html" pageEncoding="UTF-8"%>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENAC MASTER COOK</title>
@@ -22,38 +24,8 @@
 </head>
 
 <body>
-    
-        <header class="p-3 text-bg-red-500">
-        
-
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <div class="logo">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"><img
-                            class="bi me-2" src="logo.png" alt="Logo da SENAC MASTER COOK"></a>
-                </div>
-            </div>
-
-           
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="nav-link px-2 text-white" href="/find-all-receitas">Receitas</a></li>
-                    <li><a class="nav-link px-2 text-white" href="#">Categorias</a></li>
-                    <li><a class="nav-link px-2 text-white" href="#">Sobre</a></li>
-                    <li><a class="nav-link px-2 text-white" href="#">Contato</a></li>
-                </ul>
-            
-            <form action="/find-receitas" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Buscar..." aria-label="Search" name="busca">
-            </form>
-            <div class="text-end">
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                <a href="/cadastro.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
-            </div>
-        </header>
-   
-        
-    
-
-
+  <jsp:include page="Header.jsp" /> 
+  
     <h2 class="titulo-destaque">Receitas em Destaque</h2>
 
     <div id="carouselExampleIndicators" class="carousel slide d-inline-flex p-2">
@@ -122,20 +94,6 @@
         <!-- Conteúdo da lista de categorias -->
     </section>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center  border-top text-bg-red-500">
-        <div class="col-md-4 d-flex align-items-center logo">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <img class="bi me-2" src="logo.png" alt="Logo da SENAC MASTER COOK">
-          </a>
-          <span class="mb-3 mb-md-0 text-body-light">© 2023 SENAC Master Cook, Inc</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="24" height="24" src="img/twitter.svg" alt="twitter logo"></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/facebook.svg" class="bi" width="24" height="24"></img></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/instagram.svg" class="bi" width="24" height="24"></img></a></li>
-        </ul>
-      </footer>
+    <jsp:include page="Footer.jsp" />
 </body>
-
 </html>

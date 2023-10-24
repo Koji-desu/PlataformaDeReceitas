@@ -147,7 +147,7 @@ public class ReceitaDAO {
     }
 
     public List<Receita> findReceita(String busca) {
-        String SQL = "select * from receita where name like ? ";
+        String SQL = "select * from receita where name like ?";
         try {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");

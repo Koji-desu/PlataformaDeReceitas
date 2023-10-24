@@ -21,7 +21,7 @@ public class FindAllReceitaServlet extends HttpServlet {
 
         req.setAttribute("receitas", receitas);
 
-        req.getRequestDispatcher("teste.jsp").forward(req, resp);
+        req.getRequestDispatcher("findReceitas.jsp").forward(req, resp);
     }
 
 }

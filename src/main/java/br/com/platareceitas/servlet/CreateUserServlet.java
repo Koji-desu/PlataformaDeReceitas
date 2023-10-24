@@ -1,7 +1,7 @@
 package br.com.platareceitas.servlet;
 import br.com.platareceitas.DAO.UserDAO;
 import br.com.platareceitas.MODEL.User;
-import br.com.platareceitas.DAO.UserDAO.*;
+
 
 
 import javax.servlet.ServletException;
@@ -27,7 +27,7 @@ public class CreateUserServlet extends HttpServlet {
         UserDAO userDAO = new UserDAO();
         userDAO.createUser(usuario);
 
-        request.getRequestDispatcher("cadastro.html").forward(request, response);
+        request.getRequestDispatcher("cadastro.jsp").forward(request, response);
 
 
 
