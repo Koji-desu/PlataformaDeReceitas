@@ -13,6 +13,19 @@ body {
     background-color: #f7f7f7;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+main{
+    background-image: linear-gradient(1deg,#ffc107, #973406 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
 }
 
 /* Cabeçalho */
@@ -76,15 +89,14 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Título em Destaque */
-/* Título em Destaque */
+
 .titulo-destaque {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
     margin-top: 40px;
-    color: #e74c3c;
-    font-family: "Roboto", sans-serif; /* Adicione o nome da fonte desejada aqui */
+    color: white;
+    font-family: "Roboto", sans-serif; 
     font-style: normal;
 }
 
@@ -94,8 +106,8 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    align-items: center; /* Centraliza os cards verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 20px;
 }
 
@@ -137,14 +149,14 @@ nav ul li a {
 
 /* Lista de Categorias */
 .lista-categorias {
-    background-color: #ecf0f1;
     padding: 40px;
+    background-color: rgba(0,0,0, 0.7);
 }
 
 .lista-categorias h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #e74c3c;
+    color: white;
 }
 
 .lista-categorias ul {
@@ -156,7 +168,7 @@ nav ul li a {
 }
 
 .lista-categorias ul li a {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -167,7 +179,6 @@ footer {
     padding: 20px;
     background-color: #973406;
     color: white;
-    position: absolute;
 }
 
 .my-footer{

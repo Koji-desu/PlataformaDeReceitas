@@ -20,12 +20,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/allReceitas.css">
     <script src="js/trocaImage.js"></script>
+    <link rel="stylesheet" href="styles/allReceitas.css">
 </head>
 
 <jsp:include page="Header.jsp" />
 
     <main>
-        <div class="album py-5 bg-body-tertiary">
+        <div class="album py-5 ">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <c:forEach var="receita" items="${receitas}">

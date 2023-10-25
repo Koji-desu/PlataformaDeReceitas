@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/login.css" />
+    <script type="module" src="js/validaLogin.js"></script>
   </head>
 
   <body>
@@ -31,10 +32,10 @@
         <div class="container-form">
           <form action="/login-user" method="post">
 
-            <input type="email" name="emailLogin" placeholder="Email"/><br><br>
+            <input type="email" name="emailLogin" id="username" placeholder="Email"/><br><br>
 
 
-            <input type="password" name="senhaLogin" id="" placeholder="Senha"/><br><br>
+            <input type="password" name="senhaLogin" id="password" placeholder="Senha"/><br><br>
 
             <button type="submit">Entrar</button>
           </form>
@@ -50,5 +51,4 @@
 
     <jsp:include page="Footer.jsp" />
   </body>
-  <script src="js/cadastro.js"></script>
 </html>

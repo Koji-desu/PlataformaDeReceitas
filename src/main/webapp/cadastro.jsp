@@ -19,19 +19,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/cadastro.css">
   </head>
 
   <body>
     <jsp:include page="Header.jsp" />
 
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+    <main class="container-main">
+
             <div class="container-cadastro">
               <h2>Cadastro</h2>
               <form id="formCadastro" action="/create-user" method="post">
-                <div class="mb-3">
+                <div class="">
                   <label for="nome" class="form-label">Nome</label>
                   <input
                     placeholder="Enoque Leal o MAIS brabo"
@@ -46,7 +45,7 @@
                     >Digite um nome com 3 caracteres</span
                   >
                 </div>
-                <div class="mb-3">
+                <div class="">
                   <label for="email" class="form-label">E-mail</label>
                   <input
                     placeholder="email@dominio"
@@ -58,7 +57,7 @@
                   />
                   <span class="spanForm">Digite um email válido</span>
                 </div>
-                <div class="mb-3">
+                <div class="">
                   <label for="senha" class="form-label">Senha</label>
                   <input
                     placeholder="**********"
@@ -73,7 +72,7 @@
                   >
                 </div>
 
-                <div class="mb-3">
+                <div class="">
                   <label for="confSenha" class="form-label"
                     >Confirme a senha</label
                   >
@@ -90,24 +89,13 @@
                 <button type="submit" class="btn btn-success">Cadastrar</button>
               </form>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="container-login">
-              <div
-                class="mb-3"
-                style="align-items: center; align-content: center"
-              >
-                <h2>Ja possui conta?</h2>
-              </div>
-              <img
-                src="img/Bolinho21102023234221.png"
-                style="width: 320px; height: 180px"
-                alt=""
-              />
+            <div class="container-cadastro">
+              <h2>Possui cadastro?</h2>
+              <a href="login.jsp">
+              <button type="button" name="cadastraBtn">Faça login</button>
+              </a>
             </div>
-          </div>
-        </div>
-      </div>
+
     </main>
     <jsp:include page="Footer.jsp" />
   </body>

@@ -27,7 +27,9 @@
                 <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Buscar..." aria-label="Search" name="busca">
             </form>
             <div class="text-end">
+                <a href="/login.jsp">
                 <button type="button" class="btn btn-outline-light me-2">Login</button>
+            </a>
                 <a href="/cadastro.jsp"><button type="button" class="btn btn-warning">Sign-up</button></a>
             </div>
         </header>

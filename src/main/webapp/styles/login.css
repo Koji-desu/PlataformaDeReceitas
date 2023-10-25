@@ -13,12 +13,12 @@ body {
 
 .container-main{
     width: 100%;
-    background-image: linear-gradient(45deg,#ffc107, #973406 );
+    background-image: linear-gradient(1deg,#ffc107, #973406 );
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 700px;
+
     flex: 1 1 0;
 }
 

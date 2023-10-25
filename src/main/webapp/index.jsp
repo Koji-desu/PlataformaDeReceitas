@@ -25,7 +25,7 @@
 
 <body>
   <jsp:include page="Header.jsp" /> 
-  
+    <main>
     <h2 class="titulo-destaque">Receitas em Destaque</h2>
 
     <div id="carouselExampleIndicators" class="carousel slide d-inline-flex p-2">
@@ -36,16 +36,16 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h3>Bolão</h3>
-            <img src="img/bolo.jpg" class="d-block w-50" alt="...">
+            <h3>Vulcão</h3>
+            <img src="img/bolo.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
           </div>
           <div class="carousel-item">
             <h3>Bolo de Chocolate</h3>
-            <img src="img/choco.jpg" class="d-block w-50" alt="...">
+            <img src="img/choco.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
           </div>
           <div class="carousel-item">
             <h3>Pudim</h3>
-            <img src="img/pudim.jpg" class="d-block w-50" alt="...">
+            <img src="img/pudim.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -93,7 +93,7 @@
         </ul>
         <!-- Conteúdo da lista de categorias -->
     </section>
-
+  </main>
     <jsp:include page="Footer.jsp" />
 </body>
 </html>

@@ -132,5 +132,44 @@ public class UserDAO {
 
         }
     }
+    public boolean loginUser(String user, String senha){
+        boolean autenticado = false;
 
+        String SQL = "SELECT EMAIL, PASSWORD FROM USUARIO WHERE EMAIL = ? AND PASSWORD = ?";
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user);
+            preparedStatement.setString(2, senha);
+
+            ResultSet rs;
+            rs = preparedStatement.executeQuery();
+
+            if(rs.next()){
+                String loginUser = rs.getString("email");
+                String passUser = rs.getString("password");
+                autenticado = true;
+
+            }
+
+            preparedStatement.close();
+
+            return autenticado;
+
+
+
+
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            return autenticado;
+        }
+
+    }
 }

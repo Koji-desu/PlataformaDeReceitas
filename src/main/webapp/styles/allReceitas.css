@@ -12,3 +12,8 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+main{
+    align-items: normal;
+    justify-content: space-between;
+}
