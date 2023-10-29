@@ -25,10 +25,16 @@ public class CreateUserServlet extends HttpServlet {
 
         User usuario = new User(id, userName, email, password);
         UserDAO userDAO = new UserDAO();
-        userDAO.createUser(usuario);
 
-        request.getRequestDispatcher("cadastro.jsp").forward(request, response);
 
+        try{
+            userDAO.createUser(usuario);
+            request.getSession().setAttribute("loggedUser", email);
+            response.sendRedirect("/");
+        } catch(Exception x) {
+            System.out.println("Error");
+            request.getRequestDispatcher("cadastro.jsp").forward(request, response);
+        }
 
 
 

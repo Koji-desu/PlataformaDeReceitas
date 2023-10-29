@@ -1,5 +1,6 @@
 <%@page pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%! String sessionScope = "ho2je"; %>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,10 +27,22 @@
             <form action="/find-receitas" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                 <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Buscar..." aria-label="Search" name="busca">
             </form>
-            <div class="text-end">
-                <a href="/login.jsp">
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-            </a>
-                <a href="/cadastro.jsp"><button type="button" class="btn btn-warning">Sign-up</button></a>
-            </div>
+
+            <c:if test="${sessionScope.loggedUser != null}">
+                <div class="text-end">
+                      <a href="/cadastroReceita.jsp">
+                      <button type="button" class="btn btn-outline-light me-2">Postar Receita</button>
+                      </a>
+                      <a href="/logout"><button type="button" class="btn btn-warning">Logout</button></a>
+                      </div>
+            </c:if>
+            <c:if test="${sessionScope.loggedUser == null}">
+                       <div class="text-end">
+                       <a href="/login.jsp">
+                       <button type="button" class="btn btn-outline-light me-2">Login</button>
+                       </a>
+                       <a href="/cadastro.jsp"><button type="button" class="btn btn-warning">Sign-up</button></a>
+                       </div>
+           </c:if>
+
         </header>

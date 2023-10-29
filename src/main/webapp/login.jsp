@@ -30,7 +30,7 @@
       <div class="container-login">
         <h2>Login</h2>
         <div class="container-form">
-          <form action="/login-user" method="post">
+          <form action="/login" method="post">
 
             <input type="email" name="emailLogin" id="username" placeholder="Email"/><br><br>
 

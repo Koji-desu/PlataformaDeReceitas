@@ -1,5 +1,7 @@
 package br.com.platareceitas.DAO;
 import br.com.platareceitas.MODEL.User;
+import br.com.platareceitas.servlet.config.ConnectionPoolConfig;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -15,9 +17,7 @@ public class UserDAO {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -26,7 +26,7 @@ public class UserDAO {
             preparedStatement.setString(3, user.getPassword());
             preparedStatement.execute();
 
-            System.out.println("success in insert receita");
+            System.out.println("success in insert user");
 
             connection.close();
 
@@ -41,9 +41,7 @@ public class UserDAO {
         String SQL = "SELECT * FROM USUARIO";
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -84,9 +82,7 @@ public class UserDAO {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -111,9 +107,7 @@ public class UserDAO {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -138,9 +132,7 @@ public class UserDAO {
         String SQL = "SELECT EMAIL, PASSWORD FROM USUARIO WHERE EMAIL = ? AND PASSWORD = ?";
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
