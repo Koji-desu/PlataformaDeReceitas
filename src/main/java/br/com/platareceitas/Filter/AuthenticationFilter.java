@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-@WebFilter({"/admin/*"})
+@WebFilter({"/create-receita"})
 public class AuthenticationFilter implements Filter {
 
     @Override

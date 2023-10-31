@@ -61,24 +61,24 @@
 
     <section class="receitas-destaque">
         <div class="recipe-card">
-            <img src="receita.jpg" alt="Receita 1">
-            <h3>Nome da Receita</h3>
-            <p>Descrição curta da receita...</p>
-            <a href="#">Ver Receita</a>
+            <img src="img/bolo.jpg">
+            <h3>Bolo Vulcão</h3>
+            <p>Um vulcão que explode em chocolate</p>
+            <a href="/find-all-receitas">Ver Receita</a>
             <!-- Conteúdo do card 1 -->
         </div>
         <div class="recipe-card">
-            <img src="receita.jpg" alt="Receita 1">
-            <h3>Nome da Receita</h3>
-            <p>Descrição curta da receita...</p>
-            <a href="#">Ver Receita</a>
+            <img src="img/Bolo de Chocolate.png" >
+            <h3>Bolo de aniversário</h3>
+            <p>Um lindo bolo para cantar parabéns</p>
+            <a href="/find-all-receitas">Ver Receita</a>
             <!-- Conteúdo do card 2 -->
         </div>
         <div class="recipe-card">
-            <img src="receita.jpg" alt="Receita 1">
-            <h3>Nome da Receita</h3>
-            <p>Descrição curta da receita...</p>
-            <a href="#">Ver Receita</a>
+            <img src="img/pudim.jpg" >
+            <h3>Pudim</h3>
+            <p>Pudim clássico!!!</p>
+            <a href="/find-all-receitas">Ver Receita</a>
             <!-- Conteúdo do card 3 -->
         </div>
     </section>
