@@ -92,7 +92,7 @@
             </div>
             <div class="container-cadastro">
               <h2>Possui cadastro?</h2>
-              <a href="login.jsp">
+              <a href="/login">
               <button type="button" name="cadastraBtn">Faça login</button>
               </a>
             </div>

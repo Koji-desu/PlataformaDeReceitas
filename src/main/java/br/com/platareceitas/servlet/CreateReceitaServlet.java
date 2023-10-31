@@ -24,6 +24,15 @@ public class CreateReceitaServlet extends HttpServlet {
     LocalDateTime dataHora = LocalDateTime.now();
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyyHHmmss");
     String nomeArquivo = dataHora.format(formatter);
+
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, ServletException {
+
+        req.getRequestDispatcher("cadastroReceita.jsp").forward(req, resp);
+
+    }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String receitaId = request.getParameter("id");

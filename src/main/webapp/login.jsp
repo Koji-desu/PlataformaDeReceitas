@@ -44,7 +44,7 @@
       </div>
       <div class="container-login">
         <h2>Não possui cadastro?</h2>
-        <a href="cadastro.jsp">
+        <a href="/create-user">
         <button type="button" name="cadastraBtn">Cadastre-se</button>
         </a>
       </div>

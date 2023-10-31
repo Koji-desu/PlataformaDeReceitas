@@ -30,7 +30,7 @@
 
             <c:if test="${sessionScope.loggedUser != null}">
                 <div class="text-end">
-                      <a href="/cadastroReceita.jsp">
+                      <a href="/create-receita">
                       <button type="button" class="btn btn-outline-light me-2">Postar Receita</button>
                       </a>
                       <a href="/logout"><button type="button" class="btn btn-warning">Logout</button></a>
@@ -38,10 +38,10 @@
             </c:if>
             <c:if test="${sessionScope.loggedUser == null}">
                        <div class="text-end">
-                       <a href="/login.jsp">
+                       <a href="/login">
                        <button type="button" class="btn btn-outline-light me-2">Login</button>
                        </a>
-                       <a href="/cadastro.jsp"><button type="button" class="btn btn-warning">Sign-up</button></a>
+                       <a href="/create-user"><button type="button" class="btn btn-warning">Sign-up</button></a>
                        </div>
            </c:if>
 
