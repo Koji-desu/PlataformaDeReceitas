@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/allReceitas.css">
     <script src="js/trocaImage.js"></script>
-    <link rel="stylesheet" href="styles/allReceitas.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <jsp:include page="Header.jsp" />

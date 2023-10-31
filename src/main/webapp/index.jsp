@@ -19,7 +19,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footer.css">
 
 </head>
 
@@ -28,7 +29,7 @@
     <main>
     <h2 class="titulo-destaque">Receitas em Destaque</h2>
 
-    <div id="carouselExampleIndicators" class="carousel slide d-inline-flex p-2">
+    <div id="carouselExampleIndicators" class="carousel slide d-inline-flex p-2 carroselte">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -36,15 +37,15 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h3>Vulcão</h3>
+            <h3></h3>
             <img src="img/bolo.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
           </div>
           <div class="carousel-item">
-            <h3>Bolo de Chocolate</h3>
+            <h3>  </h3>
             <img src="img/choco.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
           </div>
           <div class="carousel-item">
-            <h3>Pudim</h3>
+            <h3></h3>
             <img src="img/pudim.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
           </div>
         </div>
@@ -82,17 +83,6 @@
         </div>
     </section>
 
-    <section class="lista-categorias">
-        <h2>Categorias</h2>
-        <ul>
-            <li><a href="#">Café da Manhã</a></li>
-            <li><a href="#">Almoço</a></li>
-            <li><a href="#">Jantar</a></li>
-            <li><a href="#">Sobremesas</a></li>
-
-        </ul>
-        <!-- Conteúdo da lista de categorias -->
-    </section>
   </main>
     <jsp:include page="Footer.jsp" />
 </body>

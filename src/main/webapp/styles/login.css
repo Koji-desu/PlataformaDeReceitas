@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+
     border-radius: 8px;
     padding: 20px;
     margin-top: 100px;
@@ -13,7 +13,7 @@ body {
 
 .container-main{
     width: 100%;
-    background-image: linear-gradient(1deg,#ffc107, #973406 );
+    background: #0c0ce94d;
     display: flex;
     flex-direction: row;
     align-items: center;

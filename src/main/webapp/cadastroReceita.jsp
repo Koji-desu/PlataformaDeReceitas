@@ -59,6 +59,7 @@
                   type="text"
                   name="receita-descricao"
                   id="receita-descricao"
+                  placeholder="Descreva de maneira sucinta"
                   required
                 />
               </div>
@@ -68,6 +69,7 @@
                   name="receita-instrucoes"
                   id="receita-instrucoes"
                   required
+                  placeholder="Digite as instruções de preparo"
                 ></textarea>
               </div>
               <div class="input-box">
@@ -79,6 +81,7 @@
                   name="receita-tempo-preparo"
                   id="tempo"
                   required
+                  placeholder="Digite o tempo de preparo"
                 />
               </div>
               <div class="input-box">
@@ -109,7 +112,7 @@
               </div>
               <div class="input-box">
                 <label for="imagem">Imagem:</label>
-                <input type="file" name="imagem" id="imagem" required />
+                <input type="file" name="imagem" id="imagem" required placeholder="Escolha uma imagem da sua receita" />
               </div>
               <div class="buttonSubmit">
               <button type="submit">Enviar</button>
