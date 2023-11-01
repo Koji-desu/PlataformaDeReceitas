@@ -27,9 +27,17 @@
     <jsp:include page="Header.jsp" />
 
     <main>
-        <div class="container-esquerda"></div>
+        <div class="container-esquerda">
+            <div class="header-esquerda">
+              <h5>Veja também...</h5>
+            </div>
 
-
+            <div class="body-esquerda">
+                <div>Receita X </div>
+                <div>Receita Y</div>
+                <div>Receita Z</div>
+            </div>
+          </div>
         <div class="container-meio">
             <div class="header-meio">
                 <div class="header-pontuacao">⭐⭐⭐⭐⭐</div>
@@ -38,7 +46,7 @@
             </div>
 
             <div class="body-meio">
-                <div class="body-video"></div>
+                <div class="body-video">VIDEO </div>
                 <div class="body-ingredientes">
                     <h4>Ingredientes:</h4>
                 </div>
@@ -50,13 +58,12 @@
 
 
         <div class="container-direita">
-            <div class="img-groups-add"></div>
-            <div class="img-groups-add"></div>
-            <div class="img-groups-add"></div>
+            <div class="img-groups-add">Imagem1</div>
+            <div class="img-groups-add">Imagem2</div>
+            <div class="img-groups-add">Imagem3</div>
         </div>
     </main>
 
     <jsp:include page="Footer.jsp" />
   </body>
-  <script src="js/cadastro.js"></script>
 </html>
