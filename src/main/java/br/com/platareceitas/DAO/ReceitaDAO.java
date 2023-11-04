@@ -141,7 +141,9 @@ public class ReceitaDAO {
     }
 
     public List<Receita> findReceita(String busca) {
+        /* Find By name */
         String SQL = "select * from receita where name like ?";
+        System.out.println("Buscando por: "+busca);
         try {
 
             Connection connection = ConnectionPoolConfig.getConnection();
@@ -182,4 +184,6 @@ public class ReceitaDAO {
 
         }
     }
+
+
 }

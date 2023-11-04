@@ -41,7 +41,7 @@
         <div class="container-meio">
             <div class="header-meio">
                 <div class="header-pontuacao">⭐⭐⭐⭐⭐</div>
-                <div class="header-titulo"><h2>$nome da receita$</h2></div>
+                <div class="header-titulo"><h2>AAA</h2></div>
                 <div class="header-autor"><h4>$nome do autor$</h3></div>
             </div>
 

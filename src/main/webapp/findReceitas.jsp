@@ -35,7 +35,7 @@
                             <div class="card shadow-sm">
                                 <img src="img${receita.image}" alt="imagem da receita" style="height: 150px;">
                                 <div class="card-body">
-                                    <p class="card-text">
+                                    <p class="card-text" name="nome">
                                         ${receita.name}
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
@@ -46,12 +46,12 @@
                                                 onclick="trocaImagem(this)"
                                             >
                                             </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Ver
-                                            </button>
+                                            <form action="/receita">
+                                                <input type="text" value="${receita.id}" name="id" style="display: none;">
+                                                <button type="Submit">Ver</button>
+                                            </form>
+                                            
+                                        
                                         </div>
                                         <small class="text-body-secondary">Dificuldade: ${receita.difficulty}</small>
                                     </div>
