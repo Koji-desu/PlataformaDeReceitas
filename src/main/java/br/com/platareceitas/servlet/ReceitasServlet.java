@@ -18,8 +18,9 @@ public class ReceitasServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String busca = req.getParameter("id");
-        List<Receita> receitas = new ReceitaDAO().findReceita(busca);
+        List<Receita> receitas = new ReceitaDAO().findReceitaById(busca);
         System.out.println(busca);
+
         req.setAttribute("receitas", receitas);
         req.getRequestDispatcher("receita.jsp").forward(req,resp);
 

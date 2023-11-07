@@ -37,7 +37,7 @@
               <h1>Cadastre sua receita</h1>
             </div>
             <div class="buttonTeste">
-              <button><a href="/index.jsp">👈 Voltar</a></button>
+              <button><a href="/">👈 Voltar</a></button>
             </div>
 
 

@@ -184,6 +184,50 @@ public class ReceitaDAO {
 
         }
     }
+    public List<Receita> findReceitaById(String busca) {
+        /* Find By name */
+        String SQL = "select * from receita where id like ?";
+        System.out.println("Buscando por ID: "+busca);
+        try {
+
+            Connection connection = ConnectionPoolConfig.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1,busca);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            List<Receita> receitas = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String receitaId = resultSet.getString("id");
+                String receitaName = resultSet.getString("name");
+                String receitaDescription = resultSet.getString("description");
+                String receitaInstructions = resultSet.getString("instructions");
+                int receitaTime = resultSet.getInt("time");
+                String receitaCategory = resultSet.getString("category");
+                String receitaDifficulty = resultSet.getString("difficulty");
+                String receitaImage = resultSet.getString("image");
+
+
+                Receita receita = new Receita(receitaId, receitaName, receitaDescription, receitaInstructions, receitaTime, receitaCategory, receitaDifficulty, receitaImage);
+
+                receitas.add(receita);
+
+            }
+
+            System.out.println("success in select * where receita");
+
+            connection.close();
+
+            return receitas;
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+
+        }
+    }
 
 
 }

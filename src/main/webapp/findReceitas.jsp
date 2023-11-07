@@ -48,7 +48,7 @@
                                             </button>
                                             <form action="/receita">
                                                 <input type="text" value="${receita.id}" name="id" style="display: none;">
-                                                <button type="Submit">Ver</button>
+                                                <button  class="btn btn-sm btn-outline-primary" type="Submit">Ver</button>
                                             </form>
                                             
                                         

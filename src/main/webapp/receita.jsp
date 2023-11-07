@@ -40,9 +40,12 @@
           </div>
         <div class="container-meio">
             <div class="header-meio">
+              <c:forEach var="receita" items="${receitas}">
                 <div class="header-pontuacao">⭐⭐⭐⭐⭐</div>
-                <div class="header-titulo"><h2>AAA</h2></div>
+                <div class="header-titulo">${receita.name}</h2></div>
                 <div class="header-autor"><h4>$nome do autor$</h3></div>
+                </c:forEach>
+       
             </div>
 
             <div class="body-meio">
