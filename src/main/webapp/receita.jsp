@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/receita.css">
+    <link rel="stylesheet" href="styles/inputFile.css">
+    <script src="js/inputFile.js"></script>
   </head>
 
   <body>
@@ -61,9 +63,21 @@
 
 
         <div class="container-direita">
-            <div class="img-groups-add">Imagem1</div>
-            <div class="img-groups-add">Imagem2</div>
-            <div class="img-groups-add">Imagem3</div>
+          <c:forEach var="receita" items="${receitas}"><div class="img-groups-add"><img src="img${receita.image}" alt="imagem da receita" style="width: 100%;"></div></c:forEach>
+            <div class="img-groups-add">
+              <label class="picture" for="picture__input" tabIndex="0">
+                <span class="picture__image">Imagem 2</span>
+              </label>
+              
+              <input type="file" name="picture__input" id="picture__input">
+            </div>
+            <div class="img-groups-add">
+              <label class="picture" for="picture__input" tabIndex="0">
+                <span class="picture__image">Imagem 3</span>
+              </label>
+              
+              <input type="file" name="picture__input" id="picture__input">
+            </div>
         </div>
     </main>
 

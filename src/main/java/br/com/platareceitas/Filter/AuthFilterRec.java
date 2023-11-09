@@ -6,8 +6,8 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-@WebFilter({"/create-receita"})
-public class AuthenticationFilter implements Filter {
+@WebFilter({"/receita"})
+public class AuthFilterRec implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) { }
@@ -21,7 +21,7 @@ public class AuthenticationFilter implements Filter {
 
             servletRequest.setAttribute("message", "User not authenticated!");
 
-            servletRequest.getRequestDispatcher("/login").forward(httpServletRequest, servletResponse);
+            servletRequest.getRequestDispatcher("/login.jsp").forward(httpServletRequest, servletResponse);
 
         } else {
 
