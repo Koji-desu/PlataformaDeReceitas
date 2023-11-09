@@ -71,9 +71,10 @@ main{
 
 .body-video{
 
-    width: 1080px;
+    width: 70%;
     height: 450px;
     background-color: gray;
+    margin-bottom: 20px;
 }
 .body-ingredientes{
 
