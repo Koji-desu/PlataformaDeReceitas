@@ -34,7 +34,7 @@
       <li class="py-5 flex items-center"></li>
         <form action="/category" method="post">
           <img src="img/doce.jpg" alt="Doce" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900">Doces</span> <button type="submit">Ver</button>
+          <span class="text-xl text-gray-900">Doces  </span> <button type="submit" class="btn btn-sm btn-outline-primary">Ver</button>
           <input type="text" style="display: none;" value="doce" name="categorytype">
           <p class="text-sm text-gray-500">Deliciosas sobremesas para todos os gostos.</p>
         </form>
@@ -42,7 +42,7 @@
       <li class=" py-5 flex items-center">
         <form action="/category" method="post">
           <img src="img/salgado.jpg" alt="Salgado" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900" >Salgados</span><button type="submit">Ver</button>
+          <span class="text-xl text-gray-900" >Salgados</span><button type="submit" class="btn btn-sm btn-outline-primary">Ver</button>
           <input type="text" style="display: none;" value="salgado" name="categorytype">
           <p class="text-sm text-gray-500">Comidinhas deliciosas para o dia a dia.</p>
           </form>
@@ -50,7 +50,7 @@
       <li class=" py-5 flex items-center">
         <form action="/category" method="post">
           <img src="img/vegetariano.png" alt="Vegetariano" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900" >Vegetariano</span><button type="submit">Ver</button>
+          <span class="text-xl text-gray-900" >Vegetariano</span><button type="submit" class="btn btn-sm btn-outline-primary">Ver</button>
           <input type="text" style="display: none;" value="vegetariano" name="categorytype">
           <p class="text-sm text-gray-500">Opções deliciosas para quem não come carne.</p>
           </form>
@@ -58,7 +58,7 @@
       <li class=" py-5 flex items-center">
         <form action="/category" method="post">
           <img src="img/light.png" alt="Light" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900" >Light</span><button type="submit">Ver</button>
+          <span class="text-xl text-gray-900" >Light</span><button type="submit" class="btn btn-sm btn-outline-primary">Ver</button>
           <input type="text" style="display: none;" value="light" name="categorytype">
           <p class="text-sm text-gray-500">Opções saudáveis e saborosas.</p>
         </form>
@@ -66,7 +66,7 @@
       <li class="py-5 flex items-center">
         <form action="/category" method="post">
           <img src="img/vegano.png" alt="Vegano" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900" >Vegano</span><button type="submit">Ver</button>
+          <span class="text-xl text-gray-900" >Vegano</span><button type="submit" class="btn btn-sm btn-outline-primary">Ver</button>
           <input type="text" style="display: none;" value="vegano" name="categorytype">
           <p class="text-sm text-gray-500">Opções deliciosas para quem não come nenhum produto de origem animal.</p>
           </form>
