@@ -31,38 +31,38 @@
   <div class="container mx-auto max-w-7xl py-10">
     <h1 class="text-3xl font-bold text-gray-900">Categorias</h1>
     <ul class="flex flex-col gap-4">
-      <li class="py-5 flex items-center">
-        <a href="#">
+      <li class="py-5 flex items-center"></li>
+        <a href="/categorys">
           <img src="img/doce.jpg" alt="Doce" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900">Doces</span>
+          <span class="text-xl text-gray-900" name="categorytype">Doce</span>
           <p class="text-sm text-gray-500">Deliciosas sobremesas para todos os gostos.</p>
         </a>
       </li>
       <li class=" py-5 flex items-center">
-        <a href="#">
+        <a href="/categorys">
           <img src="img/salgado.jpg" alt="Salgado" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900">Salgados</span>
+          <span class="text-xl text-gray-900" name="categorytype">Salgado</span>
           <p class="text-sm text-gray-500">Comidinhas deliciosas para o dia a dia.</p>
         </a>
       </li>
       <li class=" py-5 flex items-center">
-        <a href="#">
+        <a href="/categorys">
           <img src="img/vegetariano.png" alt="Vegetariano" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900">Vegetariano</span>
+          <span class="text-xl text-gray-900" name="categorytype">Vegetariano</span>
           <p class="text-sm text-gray-500">Opções deliciosas para quem não come carne.</p>
         </a>
       </li>
       <li class=" py-5 flex items-center">
-        <a href="#">
+        <a href="/categorys">
           <img src="img/light.png" alt="Light" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900">Light</span>
+          <span class="text-xl text-gray-900" name="categorytype">Light</span>
           <p class="text-sm text-gray-500">Opções saudáveis e saborosas.</p>
         </a>
       </li>
       <li class="py-5 flex items-center">
-        <a href="#">
+        <a href="/categorys">
           <img src="img/vegano.png" alt="Vegano" class="object-fit: contain; border: 1px solid #ccc; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); w-48 h-48 mr-4" />
-          <span class="text-xl text-gray-900">Vegano</span>
+          <span class="text-xl text-gray-900" name="categorytype">Vegano</span>
           <p class="text-sm text-gray-500">Opções deliciosas para quem não come nenhum produto de origem animal.</p>
         </a>
       </li>
