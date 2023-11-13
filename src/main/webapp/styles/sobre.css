@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  main{    align-items: center;
+    justify-content: center;
+
+    text-align: center;}
+  
+  .team-member {
+    text-align: center;
+    margin: 20px;
+    margin-top: 70px;
+  }
+  
+  .team-member img {
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .team-member p{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 500px;
+  }
