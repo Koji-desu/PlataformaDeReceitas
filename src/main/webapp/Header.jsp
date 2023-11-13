@@ -20,8 +20,7 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a class="nav-link px-2 text-white" href="/find-all-receitas">Receitas</a></li>
                     <li><a class="nav-link px-2 text-white" href="/category">Categorias</a></li>
-                    <li><a class="nav-link px-2 text-white" href="#">Sobre</a></li>
-                    <li><a class="nav-link px-2 text-white" href="#">Contato</a></li>
+                    <li><a class="nav-link px-2 text-white" href="/sobre">Sobre</a></li>
                 </ul>
             
             <form action="/find-receitas" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
