@@ -2,7 +2,7 @@
 uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> <%! String sessionScope =
 "ho2je"; %>
 
-<header class="p-3 text-bg-red-500">
+<header class="">
 
 
   <nav class="nav-bar">
