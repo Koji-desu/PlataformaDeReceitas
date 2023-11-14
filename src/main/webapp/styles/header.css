@@ -4,7 +4,6 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 5px;
     height: 100px;
 }
@@ -16,12 +15,6 @@ header {
 
 
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
 
 .search-bar {
     display: flex;
@@ -43,7 +36,11 @@ header {
     cursor: pointer;
 }
 
-
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 nav ul {
     list-style: none;

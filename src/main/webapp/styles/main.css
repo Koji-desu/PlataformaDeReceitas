@@ -128,7 +128,17 @@ main{
     font-weight: bold;
 }
 
+.img-carrosel{
+    width: 1100px;
+    height: 733px;
+}
 
+@media (max-width: 1150px){
+    .img-carrosel{
+        width: 750px;
+        height: auto;
+    }
+}
 
 @media (max-width: 768px) {
     /* Estilos para telas menores (responsivo) */
@@ -139,6 +149,11 @@ main{
 
     nav ul {
         margin-top: 10px;
+    }
+
+    .img-carrosel{
+
+        width: 100%;
     }
 
     nav ul li {

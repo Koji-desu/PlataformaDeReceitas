@@ -38,15 +38,15 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h3></h3>
-            <img src="img/bolo.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
+            <img src="img/bolo.jpg" class="d-block img-carrosel">
           </div>
           <div class="carousel-item">
             <h3>  </h3>
-            <img src="img/choco.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
+            <img src="img/choco.jpg" class="d-block img-carrosel">
           </div>
           <div class="carousel-item">
             <h3></h3>
-            <img src="img/pudim.jpg" class="d-block " style="width: 1100px; height: 733px;" alt="...">
+            <img src="img/pudim.jpg" class="d-block img-carrosel">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
