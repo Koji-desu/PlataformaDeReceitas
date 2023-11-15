@@ -15,7 +15,7 @@
 
 
 <strong>Comandos SQL necessários antes de testar o sistema:</strong><br><br>
---------------CRIACAO DE TABELAS---------
+--------------CRIACAO DE TABELAS---------<br>
 
 CREATE TABLE RECEITA(ID INT AUTO_INCREMENT UNIQUE, NAME VARCHAR(256), DESCRIPTION VARCHAR(256), INSTRUCTIONS VARCHAR(256), TIME INT, CATEGORY VARCHAR(20), DIFFICULTY VARCHAR(12), IMAGE VARCHAR(256))
 
@@ -26,7 +26,7 @@ CREATE TABLE USUARIO(ID INT AUTO_INCREMENT UNIQUE, NAME VARCHAR(256), EMAIL VARC
 
 
 
---------------INSERINDO VALORES----------
+--------------INSERINDO VALORES----------<br>
 INSERT INTO RECEITA(ID, NAME, DESCRIPTION, INSTRUCTIONS, TIME, CATEGORY, DIFFICULTY, IMAGE) VALUES (0, 'Bolo Vulcão', 'Um vulcão que explode em chocolate', 'blablabla', 60,'doce', 'facil', '/Bolinho21102023234221.png' )
 
 INSERT INTO RECEITA(ID, NAME, DESCRIPTION, INSTRUCTIONS, TIME, CATEGORY, DIFFICULTY, IMAGE) VALUES (1, 'Bolo de aniversário', 'Um lindo bolo para cantar parabéns', 'blablabla', 60, 'doce','facil', '/Bolo de aniversario14112023190808.png' )
@@ -38,7 +38,7 @@ INSERT INTO RECEITA(ID, NAME, DESCRIPTION, INSTRUCTIONS, TIME, CATEGORY, DIFFICU
 
 
 
-------------CRIANDO CONTA ADMIN----------
+------------CRIANDO CONTA ADMIN----------<br>
 
 INSERT INTO USUARIO(ID, NAME, EMAIL, PASSWORD) VALUES(0, 'admin', 'admin@admin', 'admin')
 
