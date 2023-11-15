@@ -20,6 +20,7 @@
 CREATE TABLE RECEITA(ID INT AUTO_INCREMENT UNIQUE, NAME VARCHAR(256), DESCRIPTION VARCHAR(256), INSTRUCTIONS VARCHAR(256), TIME INT, CATEGORY VARCHAR(20), DIFFICULTY VARCHAR(12), IMAGE VARCHAR(256))
 
 CREATE TABLE USUARIO(ID INT AUTO_INCREMENT UNIQUE, NAME VARCHAR(256), EMAIL VARCHAR(256), PASSWORD VARCHAR(256))
+<br>
 ------------------...-----------------------
 <br><br><br>
 
@@ -31,6 +32,7 @@ INSERT INTO RECEITA(ID, NAME, DESCRIPTION, INSTRUCTIONS, TIME, CATEGORY, DIFFICU
 INSERT INTO RECEITA(ID, NAME, DESCRIPTION, INSTRUCTIONS, TIME, CATEGORY, DIFFICULTY, IMAGE) VALUES (1, 'Bolo de aniversário', 'Um lindo bolo para cantar parabéns', 'blablabla', 60, 'doce','facil', '/Bolo de aniversario14112023190808.png' )
 
 INSERT INTO RECEITA(ID, NAME, DESCRIPTION, INSTRUCTIONS, TIME, CATEGORY, DIFFICULTY, IMAGE) VALUES (2, 'Pudim','Pudim clássico', 'blablabla', 60, 'doce', 'facil', '/Pudim21102023234221.png')
+<br>
 ----------------...-------------------------
 <br><br><br>
 
@@ -44,6 +46,7 @@ INSERT INTO USUARIO(ID, NAME, EMAIL, PASSWORD) VALUES(0, 'admin', 'admin@admin',
 Executando essa query automaticamente haverá uma conta
 Login: admin@admin
 Password: admin
+<br>
 ---------------------...--------------------
 <br><br><br><br>
 
